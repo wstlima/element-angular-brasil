@@ -38,6 +38,10 @@ import { ElTableModule } from './table/module';
 import { ElContainerModule } from './container/module';
 import { ElFormModule } from './form/module';
 import { ElTreeModule } from './tree/module';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+
+
+
 export var /** @type {?} */ ElChildModules = {
     ElButtonsModule: ElButtonsModule, ElIconsModule: ElIconsModule, ElRadiosModule: ElRadiosModule, ElMenusModule: ElMenusModule, ElTooltipModule: ElTooltipModule, ElRowModule: ElRowModule,
     ElColModule: ElColModule, ElCheckboxsModule: ElCheckboxsModule, ElInputsModule: ElInputsModule, ElInputNumberModule: ElInputNumberModule, ElTagsModule: ElTagsModule, ElSelectModule: ElSelectModule,
@@ -46,6 +50,7 @@ export var /** @type {?} */ ElChildModules = {
     ElBreadcrumbsModule: ElBreadcrumbsModule, ElDateModule: ElDateModule, ElSliderModule: ElSliderModule, ElDialogModule: ElDialogModule, ElCarouselModule: ElCarouselModule, ElCollapseModule: ElCollapseModule,
     ElAlertModule: ElAlertModule, ElPaginationModule: ElPaginationModule, ElUploadModule: ElUploadModule, ElTableModule: ElTableModule, ElContainerModule: ElContainerModule, ElFormModule: ElFormModule,
     ElTreeModule: ElTreeModule,
+    NgxMaskModule: NgxMaskModule,
 };
 export var /** @type {?} */ ELMODULES_GROUP = [
     ElButtonsModule, ElIconsModule, ElRadiosModule, ElMenusModule, ElTooltipModule, ElRowModule,
@@ -55,6 +60,7 @@ export var /** @type {?} */ ELMODULES_GROUP = [
     ElBreadcrumbsModule, ElDateModule, ElSliderModule, ElDialogModule, ElCarouselModule, ElCollapseModule,
     ElAlertModule, ElPaginationModule, ElUploadModule, ElTableModule, ElContainerModule, ElFormModule,
     ElTreeModule,
+    NgxMaskModule,
 ];
 var ElModule = /** @class */ (function () {
     function ElModule() {
@@ -81,6 +87,7 @@ var ElModule = /** @class */ (function () {
                         ElCarouselModule.forRoot(), ElCollapseModule.forRoot(), ElAlertModule.forRoot(), ElPaginationModule.forRoot(),
                         ElUploadModule.forRoot(), ElTableModule.forRoot(), ElContainerModule.forRoot(), ElFormModule.forRoot(),
                         ElTreeModule.forRoot(),
+                        NgxMaskModule.forRoot({validation: false,}),
                     ],
                     exports: ELMODULES_GROUP,
                 },] },

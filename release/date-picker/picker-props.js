@@ -12,6 +12,9 @@ var ElDatePickerProps = /** @class */ (function () {
         this.hiddenDay = false;
         this.panelAbsolute = true;
         this.panelIndex = 200;
+        this.maxlength = 10;
+        this.minlength = 8;
+        this.mask = '';
         this.modelChange = new EventEmitter();
         this.clearClick = new EventEmitter();
         this.iconClick = new EventEmitter();
@@ -48,6 +51,9 @@ var ElDatePickerProps = /** @class */ (function () {
         'iconClick': [{ type: Output, args: ['icon-click',] },],
         'disabled': [{ type: Input },],
         'elDisabled': [{ type: Input },],
+        'maxlength': [{ type: Input },],
+        'minlength': [{ type: Input },],
+        'mask': [{ type: Input },],
     };
     return ElDatePickerProps;
 }());
@@ -91,5 +97,11 @@ function ElDatePickerProps_tsickle_Closure_declarations() {
     ElDatePickerProps.prototype.iconClick;
     /** @type {?} */
     ElDatePickerProps.prototype.elDisabled;
+    /** @type {?} */
+    ElDatePickerProps.prototype.maxlength;
+    /** @type {?} */
+    ElDatePickerProps.prototype.minlength;
+    /** @type {?} */
+    ElDatePickerProps.prototype.mask;
 }
 //# sourceMappingURL=picker-props.js.map

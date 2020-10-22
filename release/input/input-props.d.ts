@@ -9,6 +9,7 @@ export declare class ElInputPoprs {
     maxlength: number;
     minlength: number;
     placeholder: string;
+    mask: string;
     size: string;
     rows: number;
     resize: string;
@@ -32,4 +33,5 @@ export declare class ElInputPoprs {
     iconMouseup: EventEmitter<any>;
     disabled: boolean;
     elDisabled: boolean;
+    customPatterns: string;  
 }

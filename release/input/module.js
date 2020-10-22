@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ElInput } from './input';
 import { FormsModule } from '@angular/forms';
 import { ElFormItem } from '../form/form-item';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
 var ElInputsModule = /** @class */ (function () {
     function ElInputsModule() {
     }
@@ -16,7 +17,7 @@ var ElInputsModule = /** @class */ (function () {
         { type: NgModule, args: [{
                     declarations: [ElInput],
                     exports: [ElInput],
-                    imports: [CommonModule, FormsModule],
+                    imports: [CommonModule, FormsModule, NgxMaskModule.forRoot({validation: true,})],
                     entryComponents: [ElInput],
                 },] },
     ];

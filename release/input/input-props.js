@@ -4,6 +4,8 @@ var ElInputPoprs = /** @class */ (function () {
         this.type = 'text'; // input type. enum: text/textarea
         this.value = ''; // init value
         this.placeholder = '';
+        this.mask = '';
+        this.customPatterns = {'0': { pattern: new RegExp('\[a-zA-Z\]')}};
         this.rows = 2; // only type === 'textarea'
         // native attrs
         this.autoComplete = 'off'; // only type === 'text'
@@ -42,6 +44,8 @@ var ElInputPoprs = /** @class */ (function () {
         'maxlength': [{ type: Input },],
         'minlength': [{ type: Input },],
         'placeholder': [{ type: Input },],
+        'mask': [{ type: Input },],
+        'customPatterns': [{ type: Input },],
         'size': [{ type: Input },],
         'rows': [{ type: Input },],
         'resize': [{ type: Input },],
@@ -82,6 +86,10 @@ function ElInputPoprs_tsickle_Closure_declarations() {
     ElInputPoprs.prototype.minlength;
     /** @type {?} */
     ElInputPoprs.prototype.placeholder;
+    /** @type {?} */
+    ElInputPoprs.prototype.mask;
+    /** @type {?} */
+    ElInputPoprs.prototype.customPatterns;
     /** @type {?} */
     ElInputPoprs.prototype.size;
     /** @type {?} */
